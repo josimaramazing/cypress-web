@@ -1,0 +1,33 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "runOnChrome":"cypress run --browser chrome",
+    "start":"npx cypress run --record --key 8506aee6-21d1-40ba-8b55-48e071258090 --browser chrome"
+  },
+  "keywords": [
+    "cucumber",
+    "cypresss",
+    "javascript"
+  ],
+  "author": "Josimar Leon",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.3.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^1.18.3"
+  
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
